@@ -23,7 +23,7 @@ def is_check_even(name_user):
         else:
             right_answer = 'no'
         player_answer = prompt.string('Your answer: ')
-        if player_answer == right_answer:
+        if player_answer == str(right_answer):
             sum_answers += 1
             print('Correct!')
             if sum_answers == need_answers:

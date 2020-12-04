@@ -14,7 +14,7 @@ def is_prime_numbers(name_user):
     sum_answers = 0
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while sum_answers < need_answers:
-        number = randint(0, 4)
+        number = randint(0, 200)
         print('Question: {}'.format(number))
         if number > 1:
             i = 2
@@ -27,7 +27,7 @@ def is_prime_numbers(name_user):
         else:
             right_answer = 'no'
         player_answer = prompt.string('Your answer: ')
-        if player_answer == right_answer:
+        if player_answer == str(right_answer):
             sum_answers += 1
             print('Correct!')
             if sum_answers == need_answers:

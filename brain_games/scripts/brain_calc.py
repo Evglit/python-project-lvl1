@@ -33,7 +33,7 @@ def calculator(name_user):
             '{}'.format(number2)
             )
         player_answer = prompt.string('Your answer: ')
-        if int(player_answer) == right_answer:
+        if player_answer == str(right_answer):
             sum_answers += 1
             print('Correct!')
             if sum_answers == need_answers:

@@ -6,7 +6,7 @@
 ### Test brain-even:
 [![asciicast](https://asciinema.org/a/q6cSXzit4XnIZeq5C0GW6y1Ry.svg)](https://asciinema.org/a/q6cSXzit4XnIZeq5C0GW6y1Ry)<br>
 ### Test brain-calc:
-[![asciicast](https://asciinema.org/a/oAEtD9TvcX8EG6okT3DlewDDZ.svg)](https://asciinema.org/a/oAEtD9TvcX8EG6okT3DlewDDZ)<br>
+[![asciicast](https://asciinema.org/a/377786.svg)](https://asciinema.org/a/377786)
 ### Test brain-gcd:
 [![asciicast](https://asciinema.org/a/acUr57BKvPhuUZVdCNjfB2aGm.svg)](https://asciinema.org/a/acUr57BKvPhuUZVdCNjfB2aGm)<br>
 ### Test brain-progression:

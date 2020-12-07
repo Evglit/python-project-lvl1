@@ -12,7 +12,8 @@ def welcome_user():
 
 
 def ask_answer(right_answer, name_user):
-    """Asks for an answer, compares with the correct answer, returns true or false."""
+    """Asks for an answer, compares with the correct answer.
+    Returns true or false."""
     player_answer = prompt.string('Your answer: ')
     if player_answer == str(right_answer):
         print('Correct!')

@@ -3,10 +3,13 @@
 from random import randint
 
 
+RULES_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime_numbers():
-    """Prints a number. Returns simple or not."""
+    """Returns a number and the answer is simple or not."""
     number = randint(0, 200)
-    print('Question: {}'.format(number))
+    game_answer = 'Question: {}'.format(number)
     if number > 1:
         i = 2
         while number % i != 0:
@@ -17,4 +20,4 @@ def is_prime_numbers():
             right_answer = 'no'
     else:
         right_answer = 'no'
-    return right_answer
+    return game_answer, right_answer

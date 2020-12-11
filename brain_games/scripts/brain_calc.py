@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
 """Calculator."""
 
-from brain_games import cli
-
 from brain_games.games import calc
+
+from brain_games import engine
 
 
 def main():
-    """Make a user intreface."""
-    name_user = cli.welcome_user()
-    print('What is the result of the expression?')
-    need_answers = 3
-    sum_answers = 0
-    while sum_answers < need_answers:
-        if cli.ask_answer(calc.calculator(), name_user):
-            sum_answers += 1
-            if sum_answers == need_answers:
-                print('Congratulations, {}!'.format(name_user))
-        else:
-            break
+    """Running the brain-calc."""
+    engine.game_engine(calc.calculator, calc.RULES_GAME)
 
 
 if __name__ == '__main__':

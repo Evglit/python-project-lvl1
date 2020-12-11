@@ -1,1 +1,1 @@
-"""Brain-games."""
+"""Scripts of Brain-games."""

@@ -6,7 +6,7 @@ from random import randint
 RULES_GAME = 'What is the result of the expression?'
 
 
-def calculator():
+def play_game():
     """Returns a mathematical expression
     and the correct answer."""
     number1 = randint(0, 100)

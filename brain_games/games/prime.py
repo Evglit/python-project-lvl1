@@ -6,7 +6,7 @@ from random import randint
 RULES_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime_numbers():
+def play_game():
     """Returns a number and the answer is simple or not."""
     number = randint(0, 200)
     game_answer = 'Question: {}'.format(number)

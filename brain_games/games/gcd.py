@@ -6,7 +6,7 @@ from random import randint
 RULES_GAME = 'Find the greatest common divisor of given numbers.'
 
 
-def what_gcd():
+def play_game():
     """Returns two numbers and their Greatest Common Divisor."""
     number1 = randint(10, 100)
     number2 = randint(10, 100)

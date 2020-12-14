@@ -8,14 +8,14 @@ NEED_RIGHT_ANSWERS = 3
 GREETING = 'Welcome to the Brain Games!'
 
 
-def game_engine(game, rules_game):
+def game_engine(game):
     """Game engine of brain-games."""
     name_user = cli.ask_question(GREETING, 'May I have your name?')
     print('Hello, {}!'.format(name_user))
-    print('{}'.format(rules_game))
+    print('{}'.format(game.RULES_GAME))
     sum_right_answers = 0
     while sum_right_answers < NEED_RIGHT_ANSWERS:
-        game_question, right_answer = game()
+        game_question, right_answer = game.play_game()
         player_answer = cli.ask_question(game_question, 'Your answer:')
         if player_answer == str(right_answer):
             print('Correct!')

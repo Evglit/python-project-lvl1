@@ -6,7 +6,7 @@ from random import randint
 RULES_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def is_check_even():
+def play_game():
     """Returns a number and the answer is even or not."""
     number = randint(0, 100)
     game_question = 'Question: {}'.format(number)

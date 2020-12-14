@@ -8,7 +8,7 @@ from brain_games import engine
 
 def main():
     """Running the brain-progession."""
-    engine.game_engine(progression.create_progression, progression.RULES_GAME)
+    engine.game_engine(progression)
 
 
 if __name__ == '__main__':

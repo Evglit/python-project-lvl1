@@ -6,7 +6,7 @@ from random import randint
 RULES_GAME = 'What number is missing in the progression?'
 
 
-def create_progression():
+def play_game():
     """Returns an arithmetic progression and the missing number."""
     number = randint(0, 100)
     difference_progression = randint(1, 10)

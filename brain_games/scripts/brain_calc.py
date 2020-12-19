@@ -8,7 +8,7 @@ from brain_games import engine
 
 def main():
     """Running the brain-calc."""
-    engine.game_engine(calc)
+    engine.launch_game_engine(calc)
 
 
 if __name__ == '__main__':

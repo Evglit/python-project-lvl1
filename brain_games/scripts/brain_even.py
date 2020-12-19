@@ -8,7 +8,7 @@ from brain_games import engine
 
 def main():
     """Running the brain-even."""
-    engine.game_engine(even)
+    engine.launch_game_engine(even)
 
 
 if __name__ == '__main__':

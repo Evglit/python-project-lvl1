@@ -8,16 +8,13 @@ RULES_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def play_game():
     """Returns a number and the answer is simple or not."""
-    number = randint(0, 200)
-    game_answer = 'Question: {}'.format(number)
-    if number > 1:
+    random_number = randint(0, 200)
+    game_question = 'Question: {}'.format(random_number)
+    if random_number > 1:
         i = 2
-        while number % i != 0:
+        while random_number % i != 0 and i <= random_number / 2:
             i += 1
-        if i == number:
-            right_answer = 'yes'
-        else:
-            right_answer = 'no'
+        right_answer = 'yes' if random_number == i else 'no'
     else:
         right_answer = 'no'
-    return game_answer, right_answer
+    return game_question, right_answer

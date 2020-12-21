@@ -20,5 +20,9 @@ def play_game():
     hidden_element = randint(0, size_progression - 1)
     right_answer = arithmetic_progression[hidden_element]
     arithmetic_progression[hidden_element] = '..'
-    game_question = 'Question: ' + ' '.join(str(x) for x in arithmetic_progression)
+    game_question = (
+        'Question: '
+        +
+        ' '.join(str(x) for x in arithmetic_progression)
+        )
     return game_question, str(right_answer)

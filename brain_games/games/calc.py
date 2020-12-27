@@ -3,10 +3,10 @@
 from random import randint, choice
 
 
-RULES_GAME = 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 
 
-def play_game():
+def get_game_data():
     """Returns a mathematical expression
     and the correct answer."""
     random_number1 = randint(0, 100)
@@ -20,7 +20,7 @@ def play_game():
     if current_operation == '*':
         right_answer = random_number1 * random_number2
     game_question = (
-        'Question: {}'.format(random_number1)
+        '{}'.format(random_number1)
         +
         ' {} '.format(current_operation)
         +

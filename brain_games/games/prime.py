@@ -3,18 +3,24 @@
 from random import randint
 
 
-RULES_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def play_game():
+def get_game_data():
     """Returns a number and the answer is simple or not."""
     random_number = randint(0, 200)
-    game_question = 'Question: {}'.format(random_number)
-    if random_number > 1:
+    game_question = '{}'.format(random_number)
+    return game_question, is_prime(random_number)
+
+
+def is_prime(number):
+    if number > 1:
         i = 2
-        while random_number % i != 0 and i <= random_number / 2:
+        while number % i != 0 and i <= number / 2:
             i += 1
-        right_answer = 'yes' if random_number == i else 'no'
+        if number == i:
+            return 'yes'
+        else:
+            return 'no'
     else:
-        right_answer = 'no'
-    return game_question, right_answer
+        return 'no'

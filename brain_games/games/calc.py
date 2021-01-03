@@ -20,10 +20,6 @@ def get_game_data():
     if current_operation == '*':
         right_answer = random_number1 * random_number2
     game_question = (
-        '{}'.format(random_number1)
-        +
-        ' {} '.format(current_operation)
-        +
-        '{}'.format(random_number2)
+        '{} {} {}'.format(random_number1, current_operation, random_number2)
         )
     return game_question, str(right_answer)

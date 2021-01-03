@@ -10,17 +10,18 @@ def get_game_data():
     """Returns a number and the answer is simple or not."""
     random_number = randint(0, 200)
     game_question = '{}'.format(random_number)
-    return game_question, is_prime(random_number)
+    right_answer = 'yes' if is_prime(random_number) else 'no'
+    return game_question, right_answer
 
 
 def is_prime(number):
     if number > 1:
         i = 2
-        while number % i != 0 and i <= number / 2:
+        while number % i != 0 and i ** 2 <= number:
             i += 1
-        if number == i:
-            return 'yes'
+        if i ** 2 > number:
+            return True
         else:
-            return 'no'
+            return False
     else:
-        return 'no'
+        return False

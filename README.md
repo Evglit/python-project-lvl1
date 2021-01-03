@@ -7,6 +7,7 @@
 5. Определение простого числа. Запускается комндой: brain-prime.<br><br>
 Для установки пакета с играми необходимо выпонить следующую команду в терминале:<br>
 python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple hexlet-code==0.2.3<br><br>
+
 ### Hexlet tests and linter status:
 ![Python CI](https://github.com/Evglit/python-project-lvl1/workflows/Python%20CI/badge.svg)
 <a href="https://codeclimate.com/github/Evglit/python-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a><br>

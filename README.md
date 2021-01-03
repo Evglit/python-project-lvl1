@@ -1,4 +1,3 @@
-<title>Игры разума</title>
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:<br>
 
 1. Калькулятор. Арифметические выражения, которые необходимо вычислить. Запускается комндой: brain-calc;<br>
@@ -8,7 +7,7 @@
 5. Определение простого числа. Запускается комндой: brain-prime.<br>
 
 Для установки пакета с играми необходимо выпонить следующую команду в терминале:<br>
-python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple hexlet-code==0.2.2<br>
+python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple hexlet-code==0.2.3<br>
 
 ### Hexlet tests and linter status:
 ![Python CI](https://github.com/Evglit/python-project-lvl1/workflows/Python%20CI/badge.svg)
